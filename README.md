@@ -16,13 +16,8 @@ conda env create -f environment.yml
 ```shell
 conda activate fnet
 ```
-- Try executing the test script:
-```shell
-./scripts/test_run.sh
-```
-The installation was successful if the script executes without errors.
 
-If installation continues to fail, try downloading the original pytorch-fnet-release_1 repository and replacing bufferedpatchdataset.py and fnet_nn_2d.py in that repo with the same files from this repo.
+If installation continues to fail, try downloading the original pytorch-fnet-release_1 repository and replacing bufferedpatchdataset.py and fnet_nn_UwUnet.py in that repo with the same files from this repo.
 
 ## Training Indian Pines with Provided Data
 To try training an indian pines prediction model with the provided data:
@@ -31,7 +26,7 @@ To try training an indian pines prediction model with the provided data:
 - try executing the script:
 
 ```shell
-./scripts/test_indian_pines.sh indian_pines 0
+./scripts/train_model_ip.sh indian_pines_200_hs 0
 ```
 If successful, it should run the training for 500 iterations and then stop
 
